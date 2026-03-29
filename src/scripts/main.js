@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
   AOS.init({
     duration: 900,
     once: false,
-    offset: 200,
+    offset: 150,
+    easing: 'ease-in-out',
+    disableMutationObserver: false,
   });
   initMobileSwiper();
   initSlider();

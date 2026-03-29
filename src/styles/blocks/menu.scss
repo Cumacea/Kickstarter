@@ -9,6 +9,8 @@
   left: 0;
 
   overflow: auto;
+  display: flex;
+  flex-direction: column;
 
   box-sizing: border-box;
   width: 100%;
@@ -24,6 +26,10 @@
   &:target {
     pointer-events: all;
     opacity: 1;
+
+    @include on-desktop {
+      display: none;
+    }
   }
 
   &__top-bar {
@@ -43,8 +49,6 @@
   }
 
   &__languages {
-    margin-bottom: 162px;
-
     @include on-tablet {
       display: none;
     }
@@ -53,6 +57,7 @@
   &__buy-button {
     display: block;
 
+    margin-block: auto 30px;
     padding-block: 16px;
 
     color: $button-color;

@@ -1,7 +1,9 @@
 .about {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 110px;
+
   padding-inline: 30px;
 
   @include on-tablet {
